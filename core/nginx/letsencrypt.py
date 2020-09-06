@@ -19,6 +19,11 @@ command = [
     "--post-hook", "/config.py"
 ]
 
+# if dane is used we recommend pinning to the key, so it should not change
+# ('true','yes') to be consistent with the logic in configuration.py
+if os.environ.get("TLS_REUSE_KEY", "false").lower() in ('true','yes'):
+    command.append("--reuse-key")
+
 # Wait for nginx to start
 time.sleep(5)
 
