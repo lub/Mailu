@@ -34,6 +34,7 @@ DEFAULT_CONFIG = {
     'INBOUND_TLS_ENFORCE': False,
     'AUTH_RATELIMIT': '10/minute;1000/hour',
     'AUTH_RATELIMIT_SUBNET': True,
+    'CREDENTIAL_ROUNDS': 12,
     'DISABLE_STATISTICS': False,
     # Mail settings
     'DMARC_RUA': None,
@@ -53,7 +54,6 @@ DEFAULT_CONFIG = {
     'RECAPTCHA_PUBLIC_KEY': '',
     'RECAPTCHA_PRIVATE_KEY': '',
     # Advanced settings
-    'PASSWORD_SCHEME': 'PBKDF2',
     'LOG_LEVEL': 'WARNING',
     # Host settings
     'HOST_IMAP': 'imap',
