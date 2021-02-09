@@ -34,7 +34,6 @@ DEFAULT_CONFIG = {
     'INBOUND_TLS_ENFORCE': False,
     'AUTH_RATELIMIT': '10/minute;1000/hour',
     'AUTH_RATELIMIT_SUBNET': True,
-    'CREDENTIAL_ROUNDS': 12,
     'DISABLE_STATISTICS': False,
     # Mail settings
     'DMARC_RUA': None,
@@ -55,6 +54,7 @@ DEFAULT_CONFIG = {
     'RECAPTCHA_PRIVATE_KEY': '',
     # Advanced settings
     'LOG_LEVEL': 'WARNING',
+    'CREDENTIAL_ROUNDS': 12,
     # Host settings
     'HOST_IMAP': 'imap',
     'HOST_LMTP': 'imap:2525',
