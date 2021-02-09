@@ -146,7 +146,7 @@ Depending on your particular deployment you most probably will want to change th
 Advanced settings
 -----------------
 
-The ``CREDENTIAL_ROUNDS`` (default: 12) is the number of rounds used by the password hashing scheme. You should use the default value.
+The ``CREDENTIAL_ROUNDS`` (default: 12) setting is the number of rounds used by the password hashing scheme. The number of rounds can be reduced in case faster authentication is needed or increased when additional protection is desired. Keep in mind that this is a mitigation against offline attacks on password hashes, aiming to prevent credential stuffing (due to password re-use) on other systems.
 
 The ``LOG_LEVEL`` setting is used by the python start-up scripts as a logging threshold.
 Log messages equal or higher than this priority will be printed.
